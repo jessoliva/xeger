@@ -1,10 +1,19 @@
-# Email Regex Tutorial
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
 
-Introductory paragraph (replace this with your text)
+# Regex Tutorial - Email Match
+
+This tutorial will explain the regex: email match. This regex can be used to verify that user input is a valid email address. Throughout the tutorial, search pattern the regex defines will be explained. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A regex, which stands for regular expression, is a sequence of characters that defines a specific search pattern that helps match, locate, and manage text.. These expressions are frequently and widely used for validation purposes. They can also be used to find certain patterns of characters within a string, or to find/replace a character/sequence of characters within a string. This tutorial will explain the components of a regex. </br>
+
+The following regex will be described: </br>
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -23,8 +32,16 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+/<r>**^**</r>([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})<r>**$**</r>/
+
+Anchors belong to the family of regex tokens that don't match any characters. Instead, they assert a specific detail about the string or the matching process. The following characters in the regex are anchors: ^ and &
+- ^ = denotes start of string
+- $ = denotes end of string
 
 ### Quantifiers
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]<r>**{2,6}**</r>)$/
+
+
 
 ### OR Operator
 
